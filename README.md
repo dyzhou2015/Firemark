@@ -25,7 +25,7 @@ When this finishes, you will see 4 values. First and last appearance of differen
  
 Then, it will ask you for `xstart`,`ystart`,`xend` and `yend`. Basically, values above. **But**, these values don't have to be accurate. Because you can can have more differences than just a watermark. This basically ask you for coordinates of a frame, which will be replaced.
  
-Then it asks for `img`. This asks for **image from which the pixels in range determined above are gonna be put into the final image**. _Type **pixelMap** for the **first** image and **pixelMap2** for the **second** image.
+Then it asks for `pixelMap`. This asks for **image from which the pixels in range determined above are gonna be put into the final image**. _Type **pixelMap** for the **first** image and **pixelMap2** for the **second** image.
  
 Finally, it asks you for the name of the final image it will save these changes to.
 `Save to (.png): final.png`
