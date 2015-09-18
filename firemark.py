@@ -8,18 +8,28 @@ def diff(p1, p2):
     dz = p1[2] - p2[2]
     return math.sqrt(dx*dx + dy*dy + dz*dz)
 
-def cutrange(xstart, ystart, xend, yend, pixelMapNum):
+def cutrange(xstart, ystart, xend, yend, sourceMap):
     for x in xrange(xstart, xend+1):
         for y in xrange(ystart, yend+1):
-            final[x,y] = pixelMapNum[x,y]
+            final[x,y] = sourceMap[x,y]
 
 def callrange():
-    xstart = raw_input("xstart >>")
-    ystart = raw_input("ystart >>")
-    xend = raw_input("xend >>")
-    yend = raw_input("yend >>")
-    pixelMapNum = input("pixelMap >>")
-    cutrange(xstart, ystart, xend, yend, pixelMapNum)
+    xstart = int(raw_input("xstart >>"))
+    ystart = int(raw_input("ystart >>"))
+    xend = int(raw_input("xend >>"))
+    yend = int(raw_input("yend >>"))
+    sourceMap = None
+    while not sourceMap:
+        choice = raw_input("image >>")
+        if choice == "1":
+            sourceMap = pixelMap
+            break
+        elif choice == "2":
+            sourceMap = pixelMap2
+            break
+        else:
+            print("Input error, input either 1 or 2.")
+    cutrange(xstart, ystart, xend, yend, sourceMap)
 
 image1 = raw_input("Image 1: ")
 image2 = raw_input("Image 2: ")
