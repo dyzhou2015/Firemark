@@ -14,10 +14,10 @@ def cutrange(xstart, ystart, xend, yend, pixelMapNum):
             final[x,y] = pixelMapNum[x,y]
 
 def callrange():
-    xstart = input("xstart >>")
-    ystart = input("ystart >>")
-    xend = input("xend >>")
-    yend = input("yend >>")
+    xstart = raw_input("xstart >>")
+    ystart = raw_input("ystart >>")
+    xend = raw_input("xend >>")
+    yend = raw_input("yend >>")
     pixelMapNum = input("pixelMap >>")
     cutrange(xstart, ystart, xend, yend, pixelMapNum)
 
