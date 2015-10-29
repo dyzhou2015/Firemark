@@ -23,9 +23,9 @@ When this finishes, you will see 4 values. First and last appearance of differen
  
 `last on y`
  
-Then, it will ask you for `xstart`,`ystart`,`xend` and `yend`. Basically, values above. **But**, these values don't have to be accurate. Because you can can have more differences than just a watermark. This basically ask you for coordinates of a frame, which will be replaced.
+Then, it will ask you for `xstart`,`ystart`,`xend` and `yend`. Basically, values above. **But**, these values don't have to be accurate. Because you can can have more differences than just a watermark. This basically asks you for position of a frame, which will be replaced.
  
-Then it asks for `image`. This asks for **image from which the pixels in range determined above are gonna be put into the final image**. _Type **1** for the **first** image and **2** for the **second** image.
+Then it asks for `image`. This asks for **image from which the pixels in range determined above are going to be put into the final image**. Type **1** for the **first** image and **2** for the **second** image.
  
 Finally, it asks you for the name of the final image it will save these changes to.
 `Save to (.png): final.png`
